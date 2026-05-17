@@ -8,8 +8,7 @@
 <title>Anto | Furniture Jepara</title>
 
 <meta name="description" content="Furniture Jepara custom & retail terbaik.">
-
-<meta name="theme-color" content="#0f172a">
+<meta name="theme-color" content="#020617">
 
 <meta property="og:title" content="Anto | Furniture Jepara">
 <meta property="og:description" content="Katalog furniture Jepara terbaik & custom order langsung WhatsApp">
@@ -20,26 +19,10 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="canonical" href="https://anto.drafterfurniture.com/">
-
-<link
-rel="preload"
-href="/assets/font/PlusJakartaSans-Regular.woff2"
-as="font"
-type="font/woff2"
-crossorigin>
-
-<link
-rel="preload"
-href="/style.css"
-as="style">
-
-<link
-rel="stylesheet"
-href="/style.css">
-
 <link rel="icon" href="/assets/img/favicon.ico">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -47,11 +30,21 @@ box-sizing:border-box;
 }
 
 body{
-font-family:'Plus Jakarta Sans',sans-serif;
-background:#0f172a;
+font-family:system-ui,-apple-system,sans-serif;
+background:#020617;
 color:#fff;
 overflow-x:hidden;
 min-height:100vh;
+}
+
+.bg{
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at top left,#334155,transparent 35%),
+radial-gradient(circle at bottom right,#0ea5e9,transparent 35%),
+#020617;
+z-index:-1;
 }
 
 .container{
@@ -62,8 +55,9 @@ padding:20px;
 
 .card{
 background:rgba(255,255,255,.08);
-backdrop-filter:blur(6px);
 border:1px solid rgba(255,255,255,.1);
+backdrop-filter:blur(6px);
+-webkit-backdrop-filter:blur(6px);
 border-radius:24px;
 padding:20px;
 margin-bottom:20px;
@@ -80,14 +74,16 @@ width:80px;
 height:80px;
 border-radius:50%;
 object-fit:cover;
+border:2px solid rgba(255,255,255,.15);
 }
 
 h1{
 font-size:28px;
 font-weight:700;
+margin-bottom:4px;
 }
 
-p{
+.subtitle{
 opacity:.8;
 font-size:14px;
 }
@@ -95,7 +91,7 @@ font-size:14px;
 .social{
 display:flex;
 gap:12px;
-margin-top:16px;
+margin-top:18px;
 flex-wrap:wrap;
 }
 
@@ -105,44 +101,84 @@ height:44px;
 display:flex;
 align-items:center;
 justify-content:center;
-border-radius:12px;
+border-radius:14px;
+background:rgba(255,255,255,.08);
+color:#fff;
+text-decoration:none;
+font-size:13px;
+font-weight:700;
+transition:.2s;
+}
+
+.social a:hover{
+transform:translateY(-2px);
+background:rgba(255,255,255,.15);
+}
+
+.links{
+display:flex;
+flex-direction:column;
+gap:14px;
+}
+
+.link-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+padding:16px;
+border-radius:18px;
 background:rgba(255,255,255,.08);
 text-decoration:none;
 color:#fff;
-font-size:18px;
+font-weight:600;
+transition:.2s;
+}
+
+.link-btn:hover{
+transform:translateY(-2px);
+background:rgba(255,255,255,.14);
+}
+
+.section-title{
+font-size:20px;
+font-weight:700;
+margin-bottom:16px;
 }
 
 .grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:12px;
-margin-top:16px;
 }
 
 .grid img{
 width:100%;
-border-radius:16px;
-display:block;
 aspect-ratio:1/1;
 object-fit:cover;
+border-radius:18px;
+display:block;
 }
 
 .footer{
 text-align:center;
 opacity:.6;
 font-size:13px;
-padding:10px 0;
+padding:10px 0 20px;
 }
 
-.bg{
-position:fixed;
-inset:0;
-background:
-radial-gradient(circle at top left,#1e293b,transparent 40%),
-radial-gradient(circle at bottom right,#0ea5e9,transparent 35%),
-#020617;
-z-index:-1;
+@media(max-width:480px){
+
+.container{
+padding:16px;
 }
+
+.card{
+padding:18px;
+border-radius:20px;
+}
+
+}
+
 </style>
 
 <script type="application/ld+json">
@@ -167,17 +203,14 @@ z-index:-1;
 
 <div class="container">
 
+<!-- PROFILE -->
+
 <div class="card">
 
 <div class="profile-row">
 
 <img
-src="/assets/img/profile-160.webp"
-srcset="
-/assets/img/profile-80.webp 80w,
-/assets/img/profile-160.webp 160w
-"
-sizes="80px"
+src="/assets/img/profile.webp"
 width="80"
 height="80"
 class="avatar"
@@ -187,30 +220,47 @@ decoding="async">
 
 <div>
 <h1>Anto</h1>
-<p>Furniture Jepara • Custom & Retail</p>
+<div class="subtitle">
+Furniture Jepara • Custom & Retail
+</div>
 </div>
 
 </div>
 
 <div class="social">
 
-<a href="https://instagram.com/antodrafter" aria-label="Instagram" target="_blank" rel="noopener">
+<a
+href="https://instagram.com/antodrafter"
+target="_blank"
+rel="noopener">
 IG
 </a>
 
-<a href="https://tiktok.com/@drafteranto" aria-label="TikTok" target="_blank" rel="noopener">
+<a
+href="https://tiktok.com/@drafteranto"
+target="_blank"
+rel="noopener">
 TT
 </a>
 
-<a href="https://www.threads.com/@antodrafter" aria-label="Threads" target="_blank" rel="noopener">
+<a
+href="https://www.threads.com/@antodrafter"
+target="_blank"
+rel="noopener">
 TH
 </a>
 
-<a href="https://www.linkedin.com/in/rismanto" aria-label="LinkedIn" target="_blank" rel="noopener">
+<a
+href="https://www.linkedin.com/in/rismanto"
+target="_blank"
+rel="noopener">
 IN
 </a>
 
-<a href="https://id.pinterest.com/drafter_furniture" aria-label="Pinterest" target="_blank" rel="noopener">
+<a
+href="https://id.pinterest.com/drafter_furniture"
+target="_blank"
+rel="noopener">
 PI
 </a>
 
@@ -218,81 +268,89 @@ PI
 
 </div>
 
+<!-- LINKS -->
+
+<div class="card links">
+
+<a
+class="link-btn"
+href="https://wa.me/6280000000000"
+target="_blank"
+rel="noopener">
+WhatsApp
+</a>
+
+<a
+class="link-btn"
+href="https://drafterfurniture.com"
+target="_blank"
+rel="noopener">
+Website
+</a>
+
+<a
+class="link-btn"
+href="https://instagram.com/antodrafter"
+target="_blank"
+rel="noopener">
+Instagram
+</a>
+
+<a
+class="link-btn"
+href="https://github.com/drafterfurniture/GlassLink-Bio"
+target="_blank"
+rel="noopener">
+GitHub Repo
+</a>
+
+</div>
+
+<!-- GALLERY -->
+
 <div class="card">
-<h2>Desain</h2>
+
+<div class="section-title">
+Desain
+</div>
 
 <div class="grid">
 
-<picture>
-<source
-srcset="
-/assets/img/1-320.webp 320w,
-/assets/img/1-640.webp 640w
-"
-type="image/webp">
-
 <img
-src="/assets/img/1-320.webp"
+src="/assets/img/1.webp"
 width="320"
 height="320"
 alt="Furniture custom Jepara 1"
 loading="eager"
 fetchpriority="high"
 decoding="async">
-</picture>
-
-<picture>
-<source
-srcset="
-/assets/img/2-320.webp 320w,
-/assets/img/2-640.webp 640w
-"
-type="image/webp">
 
 <img
-src="/assets/img/2-320.webp"
+src="/assets/img/2.webp"
 width="320"
 height="320"
 alt="Furniture custom Jepara 2"
 loading="lazy"
 decoding="async">
-</picture>
-
-<picture>
-<source
-srcset="
-/assets/img/3-320.webp 320w,
-/assets/img/3-640.webp 640w
-"
-type="image/webp">
 
 <img
-src="/assets/img/3-320.webp"
+src="/assets/img/3.webp"
 width="320"
 height="320"
 alt="Furniture custom Jepara 3"
 loading="lazy"
 decoding="async">
-</picture>
-
-<picture>
-<source
-srcset="
-/assets/img/4-320.webp 320w,
-/assets/img/4-640.webp 640w
-"
-type="image/webp">
 
 <img
-src="/assets/img/4-320.webp"
+src="/assets/img/4.webp"
 width="320"
 height="320"
 alt="Furniture custom Jepara 4"
 loading="lazy"
 decoding="async">
-</picture>
 
 </div>
+
 </div>
 
 <div class="footer">
@@ -300,8 +358,6 @@ decoding="async">
 </div>
 
 </div>
-
-<script src="/script.js" defer></script>
 
 </body>
 </html>
