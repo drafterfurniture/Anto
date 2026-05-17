@@ -23,9 +23,22 @@
 
 <link rel="icon" href="/assets/img/favicon.ico">
 
-<link rel="preload" href="/assets/font/PlusJakartaSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link
+rel="preload"
+href="/assets/font/PlusJakartaSans-Regular.woff2"
+as="font"
+type="font/woff2"
+crossorigin>
 
+<link
+rel="preload"
+href="style.css"
+as="style"
+onload="this.onload=null;this.rel='stylesheet'">
+
+<noscript>
 <link rel="stylesheet" href="style.css">
+</noscript>
 
 <script type="application/ld+json">
 {
@@ -56,20 +69,33 @@
 <div class="profile-row">
 
 <img
-src="/assets/img/profile.webp"
+src="/assets/img/profile-96.webp"
+
+srcset="
+/assets/img/profile-96.webp 96w,
+ /assets/img/profile-192.webp 192w
+"
+
+sizes="86px"
+
 width="86"
 height="86"
+
 class="avatar"
+
 alt="Foto profil Anto Furniture Jepara"
+
 fetchpriority="high"
 decoding="async">
 
 <div class="profile">
+
 <h1>Anto</h1>
 
 <p>
 Furniture Jepara • Custom & Retail
 </p>
+
 </div>
 
 </div>
@@ -155,7 +181,7 @@ rel="noopener"
 aria-label="Pinterest">
 
 <img
-src="/assets/icons/pintarest.svg"
+src="/assets/icons/pinterest.svg"
 width="22"
 height="22"
 alt="Pinterest">
@@ -273,10 +299,20 @@ alt="Arrow">
 <div class="item">
 
 <img
-src="/assets/img/1.webp"
+src="/assets/img/1-320.webp"
+
+srcset="
+/assets/img/1-320.webp 320w,
+ /assets/img/1-640.webp 640w
+"
+
+sizes="(max-width:480px) 45vw, 220px"
+
 width="320"
 height="320"
+
 alt="Furniture custom Jepara 1"
+
 loading="eager"
 fetchpriority="high"
 decoding="async">
@@ -296,10 +332,20 @@ alt="Open">
 <div class="item">
 
 <img
-src="/assets/img/2.webp"
+src="/assets/img/2-320.webp"
+
+srcset="
+/assets/img/2-320.webp 320w,
+ /assets/img/2-640.webp 640w
+"
+
+sizes="(max-width:480px) 45vw, 220px"
+
 width="320"
 height="320"
+
 alt="Furniture custom Jepara 2"
+
 loading="lazy"
 decoding="async">
 
@@ -318,10 +364,20 @@ alt="Open">
 <div class="item">
 
 <img
-src="/assets/img/3.webp"
+src="/assets/img/3-320.webp"
+
+srcset="
+/assets/img/3-320.webp 320w,
+ /assets/img/3-640.webp 640w
+"
+
+sizes="(max-width:480px) 45vw, 220px"
+
 width="320"
 height="320"
+
 alt="Furniture custom Jepara 3"
+
 loading="lazy"
 decoding="async">
 
@@ -340,10 +396,20 @@ alt="Open">
 <div class="item">
 
 <img
-src="/assets/img/4.webp"
+src="/assets/img/4-320.webp"
+
+srcset="
+/assets/img/4-320.webp 320w,
+ /assets/img/4-640.webp 640w
+"
+
+sizes="(max-width:480px) 45vw, 220px"
+
 width="320"
 height="320"
+
 alt="Furniture custom Jepara 4"
+
 loading="lazy"
 decoding="async">
 
